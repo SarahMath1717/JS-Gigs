@@ -1,14 +1,13 @@
 import React from "react";
-import robZombie from "./assets/RobZombie.webp";
 
-const Gig = () => {
+const Gig = (props) => {
     return (
-        <div id="rob-zombie">
-            <h3 id="name">Rob Zombie</h3>
-            <img className="band" src={robZombie}></img>
-            <p id="description">Rob Zombie rocking out the classics, with touring support act Ministry</p>
-            <p id="time-date">6th June 2026</p>
-            <p id="location">Glasgow OVO Hydro</p>
+        <div className="gig">
+            {props.name && <h3>{props.name}</h3>}
+            <img className="band" src={`/assets/${props.image}`} alt={props.name} />
+            {props.description && <p>{props.description}</p>}
+            {props.timedate && <p>{props.timedate}</p>}
+            {props.location && <p>{props.location}</p>}
         </div>
     );
 };
