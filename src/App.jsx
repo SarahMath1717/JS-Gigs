@@ -1,18 +1,12 @@
 import React from "react"
-import Hello from "./components/Hello";
-import makersLogo from "./assets/Makers-Logo.png";
-import Post from "./Post.jsx"
-import Profile from "./Profile.jsx"
-import "./App.css";
+import Gig from "./Gig.jsx"
+import "./Gig.css";
 
 function App() {
   return (
-    <>
-      <Hello name="World" />
-      <img className="logo" src={makersLogo}></img>
-      <Post />
-      <Profile />
-    </>
+    <div className="App">
+      <Gig />
+    </div>
   );
 }
 
