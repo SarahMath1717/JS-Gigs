@@ -4,9 +4,32 @@
   padding: 2rem;
   text-align: center;
   background-color: black;
-  color: #c9ffd3;
+  color: #e1e1e1;
 }
 
 .band {
   width: 40rem
+}
+
+/* Grid layout for gigs */
+.gig-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Optional styling for individual gig cards */
+.gig {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #030303;
+}
+
+/* Responsive stacking for smaller screens */
+@media (max-width: 600px) {
+  .gig-grid {
+    grid-template-columns: 1fr;
+  }
 }

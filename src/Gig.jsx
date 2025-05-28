@@ -8,6 +8,8 @@ const Gig = (props) => {
             {props.description && <p>{props.description}</p>}
             {props.timedate && <p>{props.timedate}</p>}
             {props.location && <p>{props.location}</p>}
+                {/* Code for adding button */}
+            {props.children}
         </div>
     );
 };
