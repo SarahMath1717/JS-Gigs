@@ -1,6 +1,6 @@
 import React from "react"
-import LikeToggle from "./Like.jsx"
-import Gig from "./Gig.jsx"
+import LikeToggle from "./components/Like.jsx"
+import Gig from "./components/Gig.jsx"
 import "./Gig.css";
 
 function App() {
