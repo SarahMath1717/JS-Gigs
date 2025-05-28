@@ -1,27 +1,19 @@
 import React, { useState } from 'react';
 
-const LikeToggle = () => {
-    const [liked, setLiked] = useState(false);
-
-    const toggleLike = () => {
-        setLiked(!liked);
-    };
-
+const LikeToggle = ({ liked, onToggle}) => {
     return (
-        <div>
-            <button 
-                onClick={toggleLike} 
-                style={{
-                    fontSize: '2rem',
-                    background: 'none',
-                    border: 'none',
-                    cursor: 'pointer'
-                }}
-                aria-label={liked ? "Unlike" : "Like"}
-            >
-                {liked ? '❤️' : '🖤'}
-            </button>
-        </div>
+        <button 
+            onClick={onToggle} 
+            style={{
+                fontSize: '2rem',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer'
+            }}
+            aria-label={liked ? "Unlike" : "Like"}
+        >
+            {liked ? '❤️' : '🖤'}
+        </button>
     );
 };
 
